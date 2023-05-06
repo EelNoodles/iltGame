@@ -280,7 +280,7 @@ h2::first-letter{
         margin: 3% 0% 3% 0%;
       }
     
-      .statesContent{
+    .statesContent{
         top: 10vh;
         overflow-y: scroll;
         max-height: 100%;

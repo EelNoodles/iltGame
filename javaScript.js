@@ -16,6 +16,8 @@ nav_btn.forEach(element => {
             nowPage = element.id;
             togglePage(element.id);
         }
+        $(".nav").toggleClass("active");
+        $(".menu_area").toggleClass("active"); 
     });
 }); 
 

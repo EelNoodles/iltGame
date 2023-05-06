@@ -1,294 +1,292 @@
 {
-  "RegistrationGroup": {
-    "groupAov_001": {
-      "email": "zxc0973638914@gmail.com",
-      "grade": "數位三",
-      "id": "groupLol_001",
-      "member": "數位三／廖彩慧／草是綠色的／Y, 數位三／林倚萱／Dèstíñÿ_炸飯團／N, 數位四 ／劉凡齊 ／貓咪的僕人 ①／Y, 數位四／張祐綱／小綱綱123／Y, 文資四／朱榕茂／阿嬌臭鮑魚／N",
-      "name": "廖彩慧",
-      "paid": "none",
-      "stunumber": "S10955003",
-      "teamname": "回歸禮包1400"
-    },
-    "groupAov_002": {
-      "email": "s10855003@stumail.nutn.edu.tw",
-      "grade": "數位四",
-      "id": "groupLol_002",
-      "member": "數位四／蔡逸澄／貓咪的僕人2／Y, 數位四／黃捷／Jack Huang／Y, 數位四／麥浚偉／j1mmy／Y, 數位四／黃冠洋／冠Ocean ／Y, 數位四／蔡宛諭／貓咪辛奇／Y, 數位四／蕭淳云／ID:這遊戲好臭／Y",
-      "name": "蔡逸澄",
-      "paid": "none",
-      "stunumber": "S10855003",
-      "teamname": "一刀殺進去"
-    },
-    "groupAov_003": {
-      "email": "suweichen122002@gmail.com",
-      "grade": "國二甲",
-      "id": "groupLol_003",
-      "member": "國二甲／蘇暐宸／Noah..／N, 國二甲／黃政偉／get雷隊友一枚／N, 數位二／林其佐／一小撮／N, 戲劇一／黃宥評／Ðʂɢゞ暗影❀／N, 應數三／田弘炫／無敵最俊朗v／N",
-      "name": "蘇暐宸",
-      "paid": "none",
-      "stunumber": "S11022020",
-      "teamname": "老大不小，老二賊大"
-    },
-    "groupAov_004": {
-      "email": "alanliu065957@gmail.com",
-      "grade": "生科一",
-      "id": "groupLol_004",
-      "member": "生科一／劉安倫／薯條要加大এ／N, 數位一／李育姍／抓餅要加蛋এ ／Y, 生科一／陳玟菘／肉肉菘FR／N, 生科一／吳鎧丞／保守的柴犬OuO／N, 生科一／林震宇／小宇HNj／N",
-      "name": "劉安倫",
-      "paid": "none",
-      "stunumber": "S11158022",
-      "teamname": "Diego"
-    },
-    "groupAov_005": {
-      "email": "aqz58828433@gmail.com",
-      "grade": "數位一",
-      "id": "groupLol_005",
-      "member": "數位一／李禹瀚／✾nuhcelttil❅／N, 數位一／詹學濬／✾微風徐徐❅／N, 數位一／郭泰邑／ŘsŁty／N, 數位一／陸靖元／˖̶ʏ̶ᴜ̶ᴀ̶ɴ̶.₰₊+／N, 數位一／王柏勳／z̶e̶u̶s̶.₰／N, 數位一／莊建俊／玖愛放肆〆茶心／N",
-      "name": "李禹翰",
-      "paid": "none",
-      "stunumber": "S11155015",
-      "teamname": "魯蛇陳宥安"
-    },
-    "groupLol_001": {
-      "email": "a753463@gmail.com",
-      "grade": "數位四",
-      "id": "groupLol_001",
-      "member": "數位四／蕭淳云／這遊戲好臭喔／Y, 數位四／吉米／J1mmyy／Y, 數位四／黃捷／曾聖心的好朋友1／Y, 數位四／郭柔嶔／西鄉忍者小肉丸／Y, 數位四／謝宇勝／Azte／Y, 數位四／張祐綱／魚憶七秒õ／Y",
-      "name": "蕭淳云",
-      "paid": "none",
-      "stunumber": "S10855009",
-      "teamname": "FB搜尋 新竹黃捷 千斤頂jack"
-    },
-    "groupLol_002": {
-      "email": "S11055042@gm2.nutn.edu.tw",
-      "grade": "數位二",
-      "id": "groupLol_002",
-      "member": "數位二／林泊安／皮卡路／N, 數位二／吳晟銘／DoggyFish／N, 數位二／林其佐／遜泡海豹單推人／N, 數位一／林廷宥／Bartosz／N, 數位二／陳青衛／墮天XD／N, 數位二／江義翔／神翔天爭／N",
-      "name": "林泊安",
-      "paid": "none",
-      "stunumber": "S11055042",
-      "teamname": "數位扣將"
-    },
-    "groupLol_003": {
-      "email": "s10855014@gm2.nutn.edu.tw",
-      "grade": "數位四",
-      "id": "groupLol_003",
-      "member": "數位三／傅梓崵／HIiMTorYÖ一Ö／Y, 數位四／曾奕勛／零點零點零／Y, 數位四／黃冠洋／ö冠OceaNë／Y, 數位四／劉凡齊／烤鴨老大蒜泥厲害／Y, 數位四／李汶洳／柴可夫斯雞雞叫／Y",
-      "name": "曾奕勛",
-      "paid": "none",
-      "stunumber": "S10855014",
-      "teamname": "ILT T1"
-    },
-    "groupLol_004": {
-      "email": "asd30891750@gmail.com",
-      "grade": "數位三",
-      "id": "groupLol_004",
-      "member": "數位三／葉志軒／For葉子／N, 數位三 ／盧奕捷／ssssssssssteve／Y, 數位三／潘昱宏／tempjjnyblepoiyc／N, 數位三／梁茗凱／BoomBaBoomBaYah／N, 數位三／徐碩亨／戀玥音OuO／Y",
-      "name": "徐碩亨",
-      "paid": "none",
-      "stunumber": "S10955008",
-      "teamname": "盧奕捷與他的快樂夥伴"
-    },
-    "groupLol_005": {
-      "email": "yvching0626@gmail.com",
-      "grade": "教三乙",
-      "id": "groupLol_005",
-      "member": "教三乙／游鎮安／Pollaa／N, 教三乙／梁灝繼／熊愛KoreanFish／N, 經管三／劉祐慈／孩子躺好別搞事／N, 經管三／蘇向頤／國棟鼠叔開剁／N, 材料二／駱松坤／Kuannnnboo／N",
-      "name": "游鎮安",
-      "paid": "none",
-      "stunumber": "S10912080",
-      "teamname": "啊對對對對隊"
-    },
-    "singleMj_001": {
-      "email": "ning51112893@gmail.com",
-      "grade": "數位二",
-      "id": "singleMj_001",
-      "member": "solo",
-      "name": "張涴婷",
-      "paid": "none",
-      "stunumber": "S11022078",
-      "teamname": "寧寧"
-    },
-    "singleMj_002": {
-      "email": "s10855012@gm2.nutn.edu.tw",
-      "grade": "數位四",
-      "id": "singleMj_002",
-      "member": "solo",
-      "name": "陳奕潤",
-      "paid": "none",
-      "stunumber": "S10855012",
-      "teamname": "心夜空想"
-    },
-    "singleMj_003": {
-      "email": "peitsoliu@gmail.com",
-      "grade": "國三甲",
-      "id": "singleMj_003",
-      "member": "solo",
-      "name": "劉倍佐",
-      "paid": "none",
-      "stunumber": "S10922037",
-      "teamname": "電子競技沒有愛情"
-    },
-    "singleMj_004": {
-      "email": "charlieyen1114@gmail.com",
-      "grade": "數位一",
-      "id": "singleMj_004",
-      "member": "solo",
-      "name": "閻承林",
-      "paid": "none",
-      "stunumber": "S11155028",
-      "teamname": "天狐玲榊醬"
-    },
-    "singleMj_005": {
-      "email": "jimmy.f9366@gmail.com",
-      "grade": "資工四",
-      "id": "singleMj_005",
-      "member": "solo",
-      "name": "吳政賢",
-      "paid": "none",
-      "stunumber": "S10859016",
-      "teamname": "アストルフォくん"
-    },
-    "singleMj_006": {
-      "email": "ccm20010129@gmail.com",
-      "grade": "資工四",
-      "id": "singleMj_006",
-      "member": "solo",
-      "name": "鄭豈名",
-      "paid": "none",
-      "stunumber": "S10859017",
-      "teamname": "我日你麻"
-    },
-    "singleMj_007": {
-      "email": "s10855024@gm2.nutn.edu.tw",
-      "grade": "數位四",
-      "id": "singleMj_007",
-      "member": "solo",
-      "name": "邱讌壹",
-      "paid": "none",
-      "stunumber": "S10855024",
-      "teamname": "七萬怎麼輸"
-    },
-    "singleMj_008": {
-      "email": "wangyoung0504@gmail.com",
-      "grade": "數位二",
-      "id": "singleMj_008",
-      "member": "solo",
-      "name": "王政揚",
-      "paid": "none",
-      "stunumber": "S11055024",
-      "teamname": "雀聖政揚"
-    },
-    "singleMj_009": {
-      "email": "tracyhuang208@gmail.com",
-      "grade": "數位三",
-      "id": "singleMj_009",
-      "member": "solo",
-      "name": "黃慈鎔",
-      "paid": "none",
-      "stunumber": "S10955012",
-      "teamname": "星光奪目"
-    },
-    "singleMj_010": {
-      "email": "jodon0932771205@gmail.com",
-      "grade": "數位三",
-      "id": "singleMj_010",
-      "member": "solo",
-      "name": "吳柄城",
-      "paid": "none",
-      "stunumber": "S10955027",
-      "teamname": "夢想追逐者"
-    },
-    "singleMj_011": {
-      "email": "a1a2a3a4a30@gmail.com",
-      "grade": "資工四",
-      "id": "singleMj_011",
-      "member": "solo",
-      "name": "陳冠綸",
-      "paid": "none",
-      "stunumber": "S10859041",
-      "teamname": "條條大路日你麻"
-    },
-    "singleMj_012": {
-      "email": "ytes10419@gmail.com",
-      "grade": "數位二",
-      "id": "singleMj_012",
-      "member": "solo",
-      "name": "江義翔",
-      "paid": "none",
-      "stunumber": "S11055045",
-      "teamname": "全紅豹子"
-    },
-    "singleMj_013": {
-      "email": "s10855028@gm2.nutn.edu.tw",
-      "grade": "數位四",
-      "id": "singleMj_013",
-      "member": "solo",
-      "name": "張祐綱",
-      "paid": "none",
-      "stunumber": "S10855028",
-      "teamname": "光天香香雞"
-    },
-    "singleMj_014": {
-      "email": "pa147258369277@gmail.com",
-      "grade": "國二甲",
-      "id": "singleMj_014",
-      "member": "solo",
-      "name": "劉子菱",
-      "paid": "none",
-      "stunumber": "S11022028",
-      "teamname": "薯球她馬麻"
-    },
-    "singleMj_015": {
-      "email": "s10955014@gm2.nutn.edu.tw",
-      "grade": "數位三",
-      "id": "singleMj_015",
-      "member": "solo",
-      "name": "張浩恩",
-      "paid": "none",
-      "stunumber": "S10955014",
-      "teamname": "昂耨"
-    },
-    "singleMj_016": {
-      "email": "ss89102535@gmail.com",
-      "grade": "數位四",
-      "id": "singleMj_016",
-      "member": "solo",
-      "name": "謝宇勝",
-      "paid": "none",
-      "stunumber": "S10855002",
-      "teamname": "Azte"
-    },
-    "singleMj_017": {
-      "email": "qawsed58834@gmail.com",
-      "grade": "數位四",
-      "id": "singleMj_017",
-      "member": "solo",
-      "name": "郭柔嶔",
-      "paid": "none",
-      "stunumber": "S10855022",
-      "teamname": "yongfus"
-    },
-    "singleMj_018": {
-      "email": "yolobao@gmail.com",
-      "grade": "文資四",
-      "id": "singleMj_018",
-      "member": "solo",
-      "name": "包丞竣",
-      "paid": "none",
-      "stunumber": "S10834002",
-      "teamname": "新手包包"
-    },
-    "test_001": {
-      "email": "as06180618@gmail.com",
-      "grade": "數位三",
-      "id": "test_001",
-      "member": "數位／000／這遊戲好臭喔／Y, 數位／111／J1mmyy／Y, 數位／222／曾聖心的好朋友1／Y, 數位／333／西鄉忍者小肉丸／Y, 數位／444／Azte／Y, 數位四／555／魚憶七秒õ／Y, 數位／666／魚憶七秒õ／Y",
-      "name": "林士善",
-      "paid": "none",
-      "stunumber": "S10955042",
-      "teamname": "測試用帳號"
-    }
+  "groupAov_001": {
+    "email": "zxc0973638914@gmail.com",
+    "grade": "數位三",
+    "id": "groupLol_001",
+    "member": "數位三／廖彩慧／草是綠色的／Y, 數位三／林倚萱／Dèstíñÿ_炸飯團／N, 數位四 ／劉凡齊 ／貓咪的僕人 ①／Y, 數位四／張祐綱／小綱綱123／Y, 文資四／朱榕茂／阿嬌臭鮑魚／N",
+    "name": "廖彩慧",
+    "paid": "free",
+    "stunumber": "S10955003",
+    "teamname": "回歸禮包1400"
+  },
+  "groupAov_002": {
+    "email": "s10855003@stumail.nutn.edu.tw",
+    "grade": "數位四",
+    "id": "groupLol_002",
+    "member": "數位四／蔡逸澄／貓咪的僕人2／Y, 數位四／黃捷／Jack Huang／Y, 數位四／麥浚偉／j1mmy／Y, 數位四／黃冠洋／冠Ocean ／Y, 數位四／蔡宛諭／貓咪辛奇／Y, 數位四／蕭淳云／ID:這遊戲好臭／Y",
+    "name": "蔡逸澄",
+    "paid": "free",
+    "stunumber": "S10855003",
+    "teamname": "一刀殺進去"
+  },
+  "groupAov_003": {
+    "email": "suweichen122002@gmail.com",
+    "grade": "國二甲",
+    "id": "groupLol_003",
+    "member": "國二甲／蘇暐宸／Noah..／N, 國二甲／黃政偉／get雷隊友一枚／N, 數位二／林其佐／一小撮／N, 戲劇一／黃宥評／Ðʂɢゞ暗影❀／N, 應數三／田弘炫／無敵最俊朗v／N",
+    "name": "蘇暐宸",
+    "paid": "paid_100",
+    "stunumber": "S11022020",
+    "teamname": "老大不小，老二賊大"
+  },
+  "groupAov_004": {
+    "email": "alanliu065957@gmail.com",
+    "grade": "生科一",
+    "id": "groupLol_004",
+    "member": "生科一／劉安倫／薯條要加大এ／N, 數位一／李育姍／抓餅要加蛋এ ／Y, 生科一／陳玟菘／肉肉菘FR／N, 生科一／吳鎧丞／保守的柴犬OuO／N, 生科一／林震宇／小宇HNj／N",
+    "name": "劉安倫",
+    "paid": "paid_100",
+    "stunumber": "S11158022",
+    "teamname": "Diego"
+  },
+  "groupAov_005": {
+    "email": "aqz58828433@gmail.com",
+    "grade": "數位一",
+    "id": "groupLol_005",
+    "member": "數位一／李禹瀚／✾nuhcelttil❅／N, 數位一／詹學濬／✾微風徐徐❅／N, 數位一／郭泰邑／ŘsŁty／N, 數位一／陸靖元／˖̶ʏ̶ᴜ̶ᴀ̶ɴ̶.₰₊+／N, 數位一／王柏勳／z̶e̶u̶s̶.₰／N, 數位一／莊建俊／玖愛放肆〆茶心／N",
+    "name": "李禹翰",
+    "paid": "paid_100",
+    "stunumber": "S11155015",
+    "teamname": "魯蛇陳宥安"
+  },
+  "groupLol_001": {
+    "email": "a753463@gmail.com",
+    "grade": "數位四",
+    "id": "groupLol_001",
+    "member": "數位四／蕭淳云／這遊戲好臭喔／Y, 數位四／吉米／J1mmyy／Y, 數位四／黃捷／曾聖心的好朋友1／Y, 數位四／郭柔嶔／西鄉忍者小肉丸／Y, 數位四／謝宇勝／Azte／Y, 數位四／張祐綱／魚憶七秒õ／Y",
+    "name": "蕭淳云",
+    "paid": "free",
+    "stunumber": "S10855009",
+    "teamname": "FB搜尋 新竹黃捷 千斤頂jack"
+  },
+  "groupLol_002": {
+    "email": "S11055042@gm2.nutn.edu.tw",
+    "grade": "數位二",
+    "id": "groupLol_002",
+    "member": "數位二／林泊安／皮卡路／N, 數位二／吳晟銘／DoggyFish／N, 數位二／林其佐／遜泡海豹單推人／N, 數位一／林廷宥／Bartosz／N, 數位二／陳青衛／墮天XD／N, 數位二／江義翔／神翔天爭／N",
+    "name": "林泊安",
+    "paid": "paid_100",
+    "stunumber": "S11055042",
+    "teamname": "數位扣將"
+  },
+  "groupLol_003": {
+    "email": "s10855014@gm2.nutn.edu.tw",
+    "grade": "數位四",
+    "id": "groupLol_003",
+    "member": "數位三／傅梓崵／HIiMTorYÖ一Ö／Y, 數位四／曾奕勛／零點零點零／Y, 數位四／黃冠洋／ö冠OceaNë／Y, 數位四／劉凡齊／烤鴨老大蒜泥厲害／Y, 數位四／李汶洳／柴可夫斯雞雞叫／Y",
+    "name": "曾奕勛",
+    "paid": "free",
+    "stunumber": "S10855014",
+    "teamname": "ILT T1"
+  },
+  "groupLol_004": {
+    "email": "asd30891750@gmail.com",
+    "grade": "數位三",
+    "id": "groupLol_004",
+    "member": "數位三／葉志軒／For葉子／N, 數位三 ／盧奕捷／ssssssssssteve／Y, 數位三／潘昱宏／tempjjnyblepoiyc／N, 數位三／梁茗凱／BoomBaBoomBaYah／N, 數位三／徐碩亨／戀玥音OuO／Y",
+    "name": "徐碩亨",
+    "paid": "free",
+    "stunumber": "S10955008",
+    "teamname": "盧奕捷與他的快樂夥伴"
+  },
+  "groupLol_005": {
+    "email": "yvching0626@gmail.com",
+    "grade": "教三乙",
+    "id": "groupLol_005",
+    "member": "教三乙／游鎮安／Pollaa／N, 教三乙／梁灝繼／熊愛KoreanFish／N, 經管三／劉祐慈／孩子躺好別搞事／N, 經管三／蘇向頤／國棟鼠叔開剁／N, 材料二／駱松坤／Kuannnnboo／N",
+    "name": "游鎮安",
+    "paid": "paid_100",
+    "stunumber": "S10912080",
+    "teamname": "啊對對對對隊"
+  },
+  "singleMj_001": {
+    "email": "ning51112893@gmail.com",
+    "grade": "數位二",
+    "id": "singleMj_001",
+    "member": "solo",
+    "name": "張涴婷",
+    "paid": "paid_50",
+    "stunumber": "S11022078",
+    "teamname": "寧寧"
+  },
+  "singleMj_002": {
+    "email": "s10855012@gm2.nutn.edu.tw",
+    "grade": "數位四",
+    "id": "singleMj_002",
+    "member": "solo",
+    "name": "陳奕潤",
+    "paid": "free",
+    "stunumber": "S10855012",
+    "teamname": "心夜空想"
+  },
+  "singleMj_003": {
+    "email": "peitsoliu@gmail.com",
+    "grade": "國三甲",
+    "id": "singleMj_003",
+    "member": "solo",
+    "name": "劉倍佐",
+    "paid": "paid_50",
+    "stunumber": "S10922037",
+    "teamname": "電子競技沒有愛情"
+  },
+  "singleMj_004": {
+    "email": "charlieyen1114@gmail.com",
+    "grade": "數位一",
+    "id": "singleMj_004",
+    "member": "solo",
+    "name": "閻承林",
+    "paid": "paid_50",
+    "stunumber": "S11155028",
+    "teamname": "天狐玲榊醬"
+  },
+  "singleMj_005": {
+    "email": "jimmy.f9366@gmail.com",
+    "grade": "資工四",
+    "id": "singleMj_005",
+    "member": "solo",
+    "name": "吳政賢",
+    "paid": "paid_50",
+    "stunumber": "S10859016",
+    "teamname": "アストルフォくん"
+  },
+  "singleMj_006": {
+    "email": "ccm20010129@gmail.com",
+    "grade": "資工四",
+    "id": "singleMj_006",
+    "member": "solo",
+    "name": "鄭豈名",
+    "paid": "paid_50",
+    "stunumber": "S10859017",
+    "teamname": "我日你麻"
+  },
+  "singleMj_007": {
+    "email": "s10855024@gm2.nutn.edu.tw",
+    "grade": "數位四",
+    "id": "singleMj_007",
+    "member": "solo",
+    "name": "邱讌壹",
+    "paid": "free",
+    "stunumber": "S10855024",
+    "teamname": "七萬怎麼輸"
+  },
+  "singleMj_008": {
+    "email": "wangyoung0504@gmail.com",
+    "grade": "數位二",
+    "id": "singleMj_008",
+    "member": "solo",
+    "name": "王政揚",
+    "paid": "paid_50",
+    "stunumber": "S11055024",
+    "teamname": "雀聖政揚"
+  },
+  "singleMj_009": {
+    "email": "tracyhuang208@gmail.com",
+    "grade": "數位三",
+    "id": "singleMj_009",
+    "member": "solo",
+    "name": "黃慈鎔",
+    "paid": "free",
+    "stunumber": "S10955012",
+    "teamname": "星光奪目"
+  },
+  "singleMj_010": {
+    "email": "jodon0932771205@gmail.com",
+    "grade": "數位三",
+    "id": "singleMj_010",
+    "member": "solo",
+    "name": "吳柄城",
+    "paid": "paid_50",
+    "stunumber": "S10955027",
+    "teamname": "夢想追逐者"
+  },
+  "singleMj_011": {
+    "email": "a1a2a3a4a30@gmail.com",
+    "grade": "資工四",
+    "id": "singleMj_011",
+    "member": "solo",
+    "name": "陳冠綸",
+    "paid": "paid_50",
+    "stunumber": "S10859041",
+    "teamname": "條條大路日你麻"
+  },
+  "singleMj_012": {
+    "email": "ytes10419@gmail.com",
+    "grade": "數位二",
+    "id": "singleMj_012",
+    "member": "solo",
+    "name": "江義翔",
+    "paid": "paid_50",
+    "stunumber": "S11055045",
+    "teamname": "全紅豹子"
+  },
+  "singleMj_013": {
+    "email": "s10855028@gm2.nutn.edu.tw",
+    "grade": "數位四",
+    "id": "singleMj_013",
+    "member": "solo",
+    "name": "張祐綱",
+    "paid": "free",
+    "stunumber": "S10855028",
+    "teamname": "光天香香雞"
+  },
+  "singleMj_014": {
+    "email": "pa147258369277@gmail.com",
+    "grade": "國二甲",
+    "id": "singleMj_014",
+    "member": "solo",
+    "name": "劉子菱",
+    "paid": "paid_50",
+    "stunumber": "S11022028",
+    "teamname": "薯球她馬麻"
+  },
+  "singleMj_015": {
+    "email": "s10955014@gm2.nutn.edu.tw",
+    "grade": "數位三",
+    "id": "singleMj_015",
+    "member": "solo",
+    "name": "張浩恩",
+    "paid": "free",
+    "stunumber": "S10955014",
+    "teamname": "昂耨"
+  },
+  "singleMj_016": {
+    "email": "ss89102535@gmail.com",
+    "grade": "數位四",
+    "id": "singleMj_016",
+    "member": "solo",
+    "name": "謝宇勝",
+    "paid": "free",
+    "stunumber": "S10855002",
+    "teamname": "Azte"
+  },
+  "singleMj_017": {
+    "email": "qawsed58834@gmail.com",
+    "grade": "數位四",
+    "id": "singleMj_017",
+    "member": "solo",
+    "name": "郭柔嶔",
+    "paid": "free",
+    "stunumber": "S10855022",
+    "teamname": "yongfus"
+  },
+  "singleMj_018": {
+    "email": "yolobao@gmail.com",
+    "grade": "文資四",
+    "id": "singleMj_018",
+    "member": "solo",
+    "name": "包丞竣",
+    "paid": "paid_50",
+    "stunumber": "S10834002",
+    "teamname": "新手包包"
+  },
+  "test_001": {
+    "email": "as06180618@gmail.com",
+    "grade": "數位三",
+    "id": "test_001",
+    "member": "數位／000／這遊戲好臭喔／Y, 數位／111／J1mmyy／Y, 數位／222／曾聖心的好朋友1／Y, 數位／333／西鄉忍者小肉丸／Y, 數位／444／Azte／Y, 數位四／555／魚憶七秒õ／Y, 數位／666／魚憶七秒õ／Y",
+    "name": "林士善",
+    "paid": "free",
+    "stunumber": "S10955042",
+    "teamname": "測試用帳號"
   }
 }
