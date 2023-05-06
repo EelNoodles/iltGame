@@ -1,18 +1,20 @@
 let nav_btn = document.querySelectorAll(".nav_text");
-isMainPage = true;
+var nowPage = "mainPage";
 nav_btn.forEach(element => {
     element.addEventListener("click", ()=>{
-        $(".nav").toggleClass("active");
-        $(".menu_area").toggleClass("active");
-        if(isMainPage && element.id != "mainPage"){
+        console.log(element.id)
+        if(nowPage != element.id && nowPage =="mainPage"){
+            nowPage = element.id;
             $(".content_area").toggleClass("active");
             $(".title_area").toggleClass("active");
-            isMainPage = false;
             togglePage(element.id);
-        }else if(element.id == "mainPage" && !isMainPage){
-            $(".content_area").toggleClass("active");
-            $(".title_area").toggleClass("active");
-            isMainPage = true;
+        }else if(nowPage != element.id && nowPage !="mainPage"){
+            if(element.id == "mainPage"){
+                $(".content_area").toggleClass("active");
+                $(".title_area").toggleClass("active");
+            }
+            nowPage = element.id;
+            togglePage(element.id);
         }
     });
 }); 
@@ -22,6 +24,33 @@ $(".menu_area").click(function (e) {
     $(".menu_area").toggleClass("active"); 
 });
 
-function togglePage(param) {
-
+function togglePage(page) {
+    switch (page){
+        case "mainPage":
+            $("#signUp_area").css("display", "none");
+            break;
+        case "gameIntro":
+            $("#signUp_area").css("display", "none");
+            alert("開發中，敬請期待。（目前只開放報名查詢）")
+            break;
+        case "gameJoin":
+            $("#signUp_area").css("display", "flex");
+            break;
+        case "gameParticipate":
+            $("#signUp_area").css("display", "none");
+            alert("開發中，敬請期待。（目前只開放報名查詢）")
+            break;
+        case "gameSchedule":
+            $("#signUp_area").css("display", "none");
+            alert("開發中，敬請期待。（目前只開放報名查詢）")
+            break;
+        case "gameRule":
+            $("#signUp_area").css("display", "none");
+            alert("開發中，敬請期待。（目前只開放報名查詢）")
+            break;
+        case "gameRecord":
+            $("#signUp_area").css("display", "none");
+            alert("開發中，敬請期待。（目前只開放報名查詢）")
+            break;
+    }
 }
