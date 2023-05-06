@@ -1,6 +1,6 @@
 #signUp_area{
     position: absolute;
-    height: 100%;
+    height: 80%;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -144,28 +144,87 @@ h2::first-letter{
 .statesContent{
     display: none;
     position: absolute;
-    top: 10vh;
+    top: 13vh;
     left: 10%;
     width: 100%;
-    height: 100%;
-    color: #F1F6F9;
-    white-space: pre-line;
+    background-color: #F1F6F9;
+    border-radius: 20px;
+    padding: 2%
 }
 
-.statesContent > ul{
+.signUpinfo{
     list-style: none;
-
+    transition: 2s linear;
+    opacity: 0;
+    z-index: -1;
 }
 
-.statesContent > li:before {
+.signUpinfo.active{
+   opacity: 1;
+}
+
+.signUpinfo > li{
+    margin: 3%;
+    font-size: 2vmin;
+    width: 100%;
+    position: relative;
+    color: #394867;
+    z-index: 3;
+  }
+
+.signUpinfo > li::before {
+    content: "";
+    position: absolute;
+    width: 4%;
+    aspect-ratio: 1/1;
+    border-radius: 100%;
+    transform: translate(-25px, -5px);
     background: linear-gradient(45deg, #f69ec4, #f9dd94);
+    transition: 1s ease;
+    box-shadow: 2px 2px 2px black;
+  }
+
+  .signUpinfo > li::after{
+    content: "";
+    position: absolute;
+    width: 15%;
+    left: 5%;
+    height: 40%;
+    bottom: -15%;
+    transform: translate(-25px, -5px);
+    background: linear-gradient(45deg, #f69ec4, #f9dd94);
+    background-color: #F1F6F9;
+    transition: 1s ease;
+    z-index: -1;
+    box-shadow: 2px 2px 2px black;
+  }
+
+  .signUpinfo > li > span{
+    font-weight: bold;
+    color: #fc6a50;
+  }
+
+  .member{
+    margin: 0%;
+    font-size: 2vmin;
+    width: 100%;
+    position: relative;
+    color: #394867;
+    z-index: 3; 
+  }
+
+  .paid_info{
+    font-weight: bold;
+    color: #394867;
+    font-size: 2vmin;
+    width: 80%;
   }
 
 @media only screen and (max-width: 768px) {
     #signUp_area{
         flex-direction: column;
         height: 80%;
-        top: 15%;
+        top: 10%;
         justify-content: start;
     }
     .sty_signUp{
@@ -211,4 +270,19 @@ h2::first-letter{
         font-size: 18px;
     }
 
+    .statesContent{
+        width: 80%;
+    }
+
+    .signUpinfo > li{
+        font-size: 3.6vmin;
+        margin: 3% 0% 3% 0%;
+      }
+    
+      .statesContent{
+        top: 10vh;
+        overflow-y: scroll;
+        max-height: 100%;
+    }
+    
 }

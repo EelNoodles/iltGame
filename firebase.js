@@ -33,7 +33,32 @@ $(".info_btn").click(function (e) {
                         $(".userInfo").toggleClass("active");
                         $("#statesInfo").html("")
                         $(".statesContent").css("display", "block");
-                        signUpinfoGernerate(value);
+                        $(".signUpinfo").toggleClass("active");
+                        var paidInfo = "";
+                        var team_member = "";
+                        switch (value["paid"]){
+                            case "none":
+                                paidInfo = "尚未定價，請稍後再嘗試。";
+                                break;
+                            case "free":
+                                paidInfo = "達到免費報名條件，無須繳費。（已經完成報名）";
+                                break;
+                            case "paid_50":
+                                paidInfo = "需繳費 50元 即可完成報名。（點擊查看繳費方式）";
+                                break;
+                            case "paid_100":
+                                paidInfo = "需繳費 100元 即可完成報名。（點擊查看繳費方式）";
+                                break;
+                            default:
+                                break;
+                        }
+                        let teamId = value["id"];
+                        if(teamId.includes("Lol") || teamId.includes("Aov") || teamId.includes("test")){
+                            team_member = value["member"].split(",")
+                        }else{
+                            team_member = [value["member"]+"（無成員資料，為單人賽）"]
+                        }
+                        signUpinfoGernerate(value, paidInfo, team_member);
                     }
                 }
               }
@@ -49,11 +74,24 @@ $(".info_btn").click(function (e) {
 
 });
 
-function signUpinfoGernerate(data){
-    var list_content = "<li><span style='color: #ff4d30; font-weight: bold;'>電子郵件：</span>" + data['email'] + "</li>" +
-                        "<li><span style='color: #ff4d30; font-weight: bold;'>報名人系級：</span>" + data["grade"] + "</li>" +
-                        "<li><span style='color: #ff4d30; font-weight: bold;'>報名人姓名：</span>" + data["name"] + "</li>" +
-                        "<li><span style='color: #ff4d30; font-weight: bold;'>報名人學號：</span>" + data["stunumber"];
+function getMemberData(data) {  
+    var member_list = ""
+    data.forEach(element => {
+        member_list += "<li class='member'>\n" + element + "</li>"
+    })
+    return member_list;
+}
+
+function signUpinfoGernerate(data, paid_info, team_member){ 
+    var list_content = "<li><span>隊伍編號：</span>" + data["id"] + "</li>" +
+                        "<li><span>電子郵件：</span>" + data['email'] + "</li>" +
+                        "<li><span>報名人系級：</span>" + data["grade"] + "</li>" +
+                        "<li><span>報名人姓名：</span>" + data["name"] + "</li>" +
+                        "<li><span>報名人學號：</span>" + data["stunumber"] + "</li>" +
+                        "<li><span>隊伍／個人名稱：</span>" + data["teamname"] + "</li>" +
+                        "<li><span>隊伍成員：</span>" + "</li>" +
+                        "<ol>" + getMemberData(team_member) + "</ol>" + 
+                        "<li><span>報名費用／報名狀態：</span></li>" +
+                        "<ol class='paid_info'>" + paid_info +"</ol>";
     $(".signUpinfo").html(list_content);
-    console.log(list_content)
 }
