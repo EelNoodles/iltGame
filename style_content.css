@@ -149,7 +149,17 @@ h2::first-letter{
     width: 100%;
     height: 100%;
     color: #F1F6F9;
+    white-space: pre-line;
 }
+
+.statesContent > ul{
+    list-style: none;
+
+}
+
+.statesContent > li:before {
+    background: linear-gradient(45deg, #f69ec4, #f9dd94);
+  }
 
 @media only screen and (max-width: 768px) {
     #signUp_area{

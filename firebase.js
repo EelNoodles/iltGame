@@ -26,13 +26,15 @@ $(".info_btn").click(function (e) {
     get(child(dbRef, 'RegistrationGroup')).then((snapshot) => {
         if (snapshot.exists()) {
             var signedUp = false;
-            for (const [key, value] of Object.entries(snapshot.val())) {
-                if($("#userEmail").val() == value["email"]&& $("#userStuNumber").val() == value["stunumber"]){
-                    signedUp = true;
-                    $(".userInfo").toggleClass("active");
-                    $("#statesInfo").html("")
-                    $(".statesContent").css("display", "block");
-                    signUpinfoGernerate(value);
+            for (const [RegistrationGroup, RegValue] of Object.entries(snapshot.val())) {
+                for (const [key, value] of Object.entries(RegValue)) {
+                    if($("#userEmail").val() === value["email"] && $("#userStuNumber").val().toUpperCase() == value["stunumber"]){
+                        signedUp = true;
+                        $(".userInfo").toggleClass("active");
+                        $("#statesInfo").html("")
+                        $(".statesContent").css("display", "block");
+                        signUpinfoGernerate(value);
+                    }
                 }
               }
               if(!signedUp){
@@ -48,10 +50,10 @@ $(".info_btn").click(function (e) {
 });
 
 function signUpinfoGernerate(data){
-    var list_content = "電子郵件：" + data['email'] +
-                        "報名人系級與年級" + data["grade"] +
-                        "報名人姓名" + data["name"] +
-                        "報名人學號" + data["stunumber"];
+    var list_content = "<li><span style='color: #ff4d30; font-weight: bold;'>電子郵件：</span>" + data['email'] + "</li>" +
+                        "<li><span style='color: #ff4d30; font-weight: bold;'>報名人系級：</span>" + data["grade"] + "</li>" +
+                        "<li><span style='color: #ff4d30; font-weight: bold;'>報名人姓名：</span>" + data["name"] + "</li>" +
+                        "<li><span style='color: #ff4d30; font-weight: bold;'>報名人學號：</span>" + data["stunumber"];
     $(".signUpinfo").html(list_content);
     console.log(list_content)
 }
