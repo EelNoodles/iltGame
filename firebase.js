@@ -44,10 +44,10 @@ $(".info_btn").click(function (e) {
                                 paidInfo = "達到免費報名條件，無須繳費。（已經完成報名）";
                                 break;
                             case "paid_50":
-                                paidInfo = "需繳費 50元 即可完成報名。（點擊查看繳費方式）";
+                                paidInfo = "需繳費 50元 即可完成報名。<a href='https://reurl.cc/Dm0qAN'>（點擊查看繳費方式）";
                                 break;
                             case "paid_100":
-                                paidInfo = "需繳費 100元 即可完成報名。（點擊查看繳費方式）";
+                                paidInfo = "需繳費 100元 即可完成報名。<a href='https://reurl.cc/Dm0qAN'>（點擊查看繳費方式）";
                                 break;
                             default:
                                 break;
