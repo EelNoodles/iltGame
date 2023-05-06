@@ -1,0 +1,235 @@
+body, html{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+.logo{
+    position: absolute; 
+    width: 4%; 
+    aspect-ratio: 1/1; 
+    transform: translateY(-50%); 
+    top: 50%; 
+    left: 1%;
+}
+
+.nav_bar{
+    width: 100%;
+    height: 10%;
+    position: absolute;
+    background-color: #F1F6F9;
+    filter: opacity(95%);
+}
+
+.nav{
+    position: absolute;
+    display: flex;
+    height: 10%;
+    align-items: center;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70%;
+    justify-content: center;
+}
+.nav_text{
+    margin: 2%;
+    font-size: 2.2vh;
+    cursor: pointer;
+    position: relative;
+    transition: 0.5s;
+    font-weight: bold;
+    user-select: none;
+}
+
+.nav_text::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #212A3E;
+    z-index: -1;
+    transition: transform 0.3s ease;
+
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+.nav_text:hover::before{
+    transform: scaleX(1);
+    transform-origin: right;
+}
+
+.nav_text:hover{
+    color: white;
+}
+
+.menu{
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .menu{
+        display: block;
+    }
+    .nav{
+        flex-direction: column;
+        height: 20%;
+        width: 100%;
+        top: 10%;
+        align-items: flex-end;
+        justify-content: center;
+        display: none;
+        transition: 0.5s ease;
+    }
+    .nav.active{
+        display: flex;
+    }
+    .nav_text{
+        margin: 1% 14% 1% 0%;
+        font-size: 2.2vh;
+        cursor: pointer;
+        position: relative;
+        transition: 0.5s;
+        font-weight: bold;
+    }
+    .menu_area{
+        position: absolute;
+        background-color: #fae559;
+        top: -20px;
+        right: -10px;
+        width: 50%;
+        height: 40%;
+        border-radius: 20px;
+        transition: 0.5s linear;
+        clip-path: circle(7.5% at 77.5% 17%);
+    }
+
+    .menu_area.active::before{
+        content: "";
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+        position: absolute;
+        box-shadow: 0px 0px 30px #ff4d30;
+        animation: color 3s linear infinite;
+    }
+
+    @keyframes color {
+        to{
+            filter: hue-rotate(360deg);
+        }
+    }
+    
+    .menu_area.active{
+        background-color: #fae559;
+        clip-path: circle(150% at 90% 7.5%);
+    }
+
+    .logo{
+        width: 10%; 
+        transform: translateY(-50%); 
+        top: 50%; 
+        left: 4%;
+    }
+}
+
+.main_bg{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+}
+
+.title_area{
+    position: absolute;
+    transition: 1s ease;
+    transform: translate(0%, -50%);
+    top: 50%;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 1.5 ease;
+    opacity: 1;
+    user-select: none;
+}
+
+.title_area.active{
+    opacity: 0;
+}
+
+.title{
+    font-size: 10vmin;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.title > span{
+    animation: neon 5s steps(1) infinite;
+}
+
+@keyframes neon{
+    5%, 9%, 13%, 25%{
+        color: rgba(255, 255, 255, 0.2);
+        text-shadow: none;
+    }
+    7%, 11%, 15%, 19%, 34%, 100%{
+        color: var(--color);
+        text-shadow: 
+        0px 0px 5px var(--color),
+        0px 0px 20px var(--color),
+        0px 0px 50px var(--color),
+        0px 0px 70px var(--color);
+    }
+}
+
+.subtitle{
+    font-size: 4vmin;
+    font-weight: bold;
+    color: white;
+    user-select: none;
+    text-shadow: 3px 3px 3px #ff4d30   ;
+}
+
+.content_area{
+    position: absolute;
+    background-color: #394867;
+    width: 100%;
+    height: 100vh;
+    transition: 1s linear;
+    clip-path: circle(12px at 50% 9vmin);
+}
+
+.content_area.active{
+    background-color: #394867;
+    clip-path: circle(150% at 50% 9vh);
+}
+
+.nowStatus{
+    margin-top: 2%;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: #212A3E;
+    font-size: 2vmin;
+    color: white;
+    font-weight: bold;
+    user-select: none;
+}
+
+.content_style{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}

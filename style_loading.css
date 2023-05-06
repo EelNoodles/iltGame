@@ -1,0 +1,38 @@
+:root {
+  --bg: #23232B;
+  --color1: #2ECBE1;
+  --color2: #fccf31;
+}
+
+:root {
+  --color: white;
+}
+
+.loading_box {
+    position: absolute;
+    display: none;
+    gap: 10px;
+}
+
+.ball {
+  width: 150px;
+  height: 150px;
+  background: #fccf31;
+  border-radius: 50%;
+  animation: loading 0.7s ease-in-out infinite alternate;
+  opacity: 0;
+  animation-delay: calc(var(--i) * 0.1s);
+}
+
+@keyframes loading {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.text {
+  color: var(--color);
+}

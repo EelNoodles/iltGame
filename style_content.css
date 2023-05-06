@@ -1,0 +1,204 @@
+#signUp_area{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.sty_signUp{
+    margin: 3%;
+    width: 30%;
+    position: relative;
+}
+
+h2{
+    font-size: 3vmin;
+    color: white;
+    margin-bottom: 10%;
+}
+
+h2::first-letter{
+    font-size: 5vmin;
+    color: #ff5033;
+}
+
+.instant_signUp > div{
+    background-color: #F1F6F9;
+    padding: 4%;
+    width: 30%;
+    text-align: center;
+    border-radius: 10px;
+    margin-left: 10%;
+}
+
+.instant_signUp > div > a{
+    pointer-events: all;
+    font-size: 2vmin;
+    font-weight: bold;
+}
+
+.userInfo{
+    color:#F1F6F9;
+    display: flex;
+    width: 80%;
+    margin-left: 10%;
+    flex-direction: column;
+}
+
+.info_data{
+    position: relative;
+    margin-bottom: 8%;
+}
+
+.info_input{
+    width: 70%;
+    height: 4vh;
+    color: #F1F6F9;
+    outline: none;
+    border: 3px solid #394867;
+    background: #F1F6F9;
+    transition: 0.5s;
+    padding: 2% 2%;
+    caret-color: #394867;
+    border-radius: 10px;
+    color: #394867;
+    font-size: 15px;
+}
+
+.info_label{
+    color: #394867;
+    position: absolute;
+    left: 3%;
+    bottom: 2vh;
+    font-weight: bold;
+    transition: 0.2s linear;
+}
+
+.info_input:focus{
+    border-image: linear-gradient(#394867 #F1F6F9) 2;
+    animation: color 3s linear infinite;
+}
+
+@keyframes color {
+    to{
+        filter: hue-rotate(360deg);
+    }
+}
+
+.info_input:focus ~ .info_label, .info_input:valid ~ .info_label{
+    bottom: calc(2vh + 2.5rem);
+    color: #F1F6F9;
+    font-weight: bold;
+}
+
+.info_btn{
+    width: 20%;
+    font-size: 18px;
+    padding: 1.3%;
+    border-radius: 0.4rem;
+    color: #F1F6F9;
+    font-weight: bold;
+    background-color: #ff5033;
+    transition: 1s;
+    position: relative;
+    border: 0;
+    text-align: center;
+    user-select: none;
+}
+
+.info_btn:hover{
+    background-color: #fc6a50;
+}
+
+.info_btn::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 0.4rem;
+    
+    transition: 1s;
+    box-shadow: 0 0 100px 15px #fc6a50;
+    opacity: 0;
+}
+
+.info_btn:active:after{    
+    transition: 0s;
+    box-shadow: 0 0 0px 0px #fc6a50;
+    opacity: 1;
+}
+
+.userInfo{
+    display: 1;
+    transition: 0.5s ease;
+    pointer-events: all;
+}
+
+.userInfo.active{
+    opacity: 0;
+    pointer-events: none;
+}
+
+.statesContent{
+    display: none;
+    position: absolute;
+    top: 10vh;
+    left: 10%;
+    width: 100%;
+    height: 100%;
+    color: #F1F6F9;
+}
+
+@media only screen and (max-width: 768px) {
+    #signUp_area{
+        flex-direction: column;
+        height: 80%;
+        top: 15%;
+        justify-content: start;
+    }
+    .sty_signUp{
+        width: 90%;
+    }
+    h2{
+        font-size: 7vmin;
+        color: white;
+        margin-bottom: 10%;
+    }
+    
+    h2::first-letter{
+        font-size: 7vmin;
+        color: #ff5033;
+    }
+
+    
+    .instant_signUp > div{
+        width: 40%;
+        padding: 6%;
+    }
+
+    .instant_signUp > div > a{
+        pointer-events: all;
+        font-size: 4.5vmin;
+        font-weight: bold;
+    }
+
+    .info_label{
+        font-size: 4vmin;
+        left: 6%;
+    }
+
+    .info_btn{
+        width: 25%;
+        padding: 2%;
+        margin-bottom: 4%;
+    }
+
+    .info_input{
+        width: 80%;
+        height: 4.5vh;
+        font-size: 18px;
+    }
+
+}
