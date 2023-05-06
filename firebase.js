@@ -49,6 +49,9 @@ $(".info_btn").click(function (e) {
                             case "paid_100":
                                 paidInfo = "需繳費 100元 即可完成報名。<a href='https://reurl.cc/Dm0qAN'>（點擊查看繳費方式）";
                                 break;
+                            case "paid":
+                                paidInfo = "收到您的繳費資料，已經完成報名，祝您比賽順利！";
+                                break;
                             default:
                                 break;
                         }
