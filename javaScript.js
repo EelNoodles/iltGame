@@ -2,7 +2,6 @@ let nav_btn = document.querySelectorAll(".nav_text");
 var nowPage = "mainPage";
 nav_btn.forEach(element => {
     element.addEventListener("click", ()=>{
-        console.log(element.id)
         if(nowPage != element.id && nowPage =="mainPage"){
             nowPage = element.id;
             $(".content_area").toggleClass("active");
