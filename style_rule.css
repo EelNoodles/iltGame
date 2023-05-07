@@ -1,0 +1,153 @@
+#rule_area{
+    position: absolute;
+    height: 85%;
+    width: 100%;
+    top: 10%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    display: none;
+    flex-direction: column;
+}
+
+.slider{
+    position: relative;
+    width: 80%;
+    height: 80%;
+    overflow: hidden;
+}
+
+.item{
+    position: absolute;
+    width: 30%;
+    height: 80%;
+    text-align: justify;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 20px;
+    transition: 0.5s;
+    transform: translate(-50%, 0);
+    left: 50%;
+    top: 7%;
+}
+
+.item > h1{
+    position: relative;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.item > h1::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: -10px;
+    background-color: gray;
+    transition: 0.5s linear;
+    transform: scale(1);
+}
+
+#next, #prev{
+    position: absolute;
+    top: 40%;
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    font-size: 4rem;
+    font-family: monospace;
+    font-weight: bold;
+    left: 10%;
+    text-shadow: 2px 2px 20px #fc6a50;
+    animation: color 2s linear infinite;
+}
+
+#next{
+    left: unset;
+    right: 10%;
+}
+
+.rule_chose_area{
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.rule_chose_area > h3{
+    position: relative;
+    color: #F1F6F9;
+    padding: 10px;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.3);
+    opacity: 0.8;
+    transition: 0.5s linear;
+}
+
+.rule_chose_area > h3.active{
+    background-color: rgba(252, 106, 80, 0.8);
+    transition: 0.5s linear;
+    opacity: 1;
+}
+
+.rule_chose_area > h3:hover{
+    opacity: 1;
+}
+
+.rule_chose_area > h3::before{
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 100%;
+    background-color: #fc6a50;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transition: 0.3s linear;
+}
+
+.rule_chose_area > h3:hover::before{
+    content: "";
+    transform: scaleX(1);
+}
+
+.item > div{
+    overflow-y: scroll;
+    height: 80%;
+    line-height: 1.7rem;
+}
+
+@keyframes item_active{
+    0%{
+        box-shadow: 0px 0px 30px #fc6a50;
+    }
+    50%{
+        box-shadow: 0px 0px 0px #fc6a50;
+    }
+    100%{
+        box-shadow: 0px 0px 30px #fc6a50;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .slider{
+        width: 95%;
+        height: 90%;
+    }
+    .item{
+        width: 65%;
+        height: 70%;
+    }
+    .item > h1{
+        font-size: 1.7rem;
+    }
+    #prev{
+        left: 0;
+    }
+    #next{
+        right: 0;
+    }
+    .rule_chose_area{
+        width: 100%;
+    }
+}

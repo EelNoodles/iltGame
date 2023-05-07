@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>數不是想被我電</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="style_content.css">
+    <link rel="stylesheet" href="style_signUp.css">
+    <link rel="stylesheet" href="style_rule.css">
     <link rel="stylesheet" href="style_loading.css">
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 </head>
@@ -56,6 +57,51 @@
                 </div>
             </div>
         </div>
+        <!-- 規章頁面 -->
+        <div id="rule_area" class="content_style">
+            <h3 style="color: #F1F6F9;">請選擇要查詢的競賽</h2>
+            <div class="rule_chose_area">
+                <h3 class="Aov_rule active">傳說對決</h3>
+                <h3 class="Lol_rule">英雄聯盟</h3>
+                <h3 class="Mj_rule">雀魂日麻</h3>
+            </div>
+            <div class="slider">
+                <div class="item">
+                    <h1>賽事介紹</h1>
+                    <div class="item_0"></div>
+                </div>
+                <div class="item">
+                    <h1>比賽模式</h1>
+                    <div class="item_1"></div>
+                    </div>
+                <div class="item">
+                    <h1>比賽獎金</h1>
+                    <div class="item_2"></div>
+                </div>
+                <div class="item">
+                    <h1>比賽時間排定準則</h1>
+                    <div class="item_3"></div>
+                </div>
+                <div class="item">
+                    <h1>比賽冠軍產生方式</h1>
+                    <div class="item_4"></div>
+                </div>
+                <div class="item">
+                    <h1>比賽報到方式</h1>  
+                    <div class="item_5"></div>  
+                </div>
+                <div class="item">
+                    <h1>比賽規章</h1>
+                    <div class="item_6"></div>
+                </div>
+                <div class="item">
+                    <h1>比賽規章</h1>
+                    <div class="item_7"></div>
+                </div>
+                <button id="next">></button>
+                <button id="prev"><</button>
+            </div>
+        </div>
     </div>
     <div class="nav_bar">
         <img class="logo" src="res/logo.png">
@@ -64,11 +110,10 @@
     <img class="menu" src="res/menu.png" style="position: absolute; width: 5%; aspect-ratio: 1/1; transform: translateY(-50%); top: 4.5%; right: 6%; pointer-events: none;">
     <div class="nav">
         <p class="nav_text" id="mainPage">賽事首頁</p>
-        <p class="nav_text" id="gameIntro">參賽介紹</p>
-        <p class="nav_text" id="gameJoin">報名狀態</p>
+        <p class="nav_text" id="rule">賽事規章</p>
+        <p class="nav_text" id="signUp">報名狀態</p>
         <p class="nav_text" id="gameParticipate">參賽隊伍</p>
         <p class="nav_text" id="gameSchedule">賽事排程</p>
-        <p class="nav_text" id="gameRule">賽事規章</p>
         <p class="nav_text" id="gameRecord">賽事紀錄</p>
     </div>
     <div class="loading_box">

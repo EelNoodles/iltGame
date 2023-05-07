@@ -87,14 +87,45 @@ function getMemberData(data) {
 
 function signUpinfoGernerate(data, paid_info, team_member){ 
     var list_content = "<li><span>隊伍編號：</span>" + data["id"] + "</li>" +
-                        "<li><span>電子郵件：</span>" + data['email'] + "</li>" +
+                        "<li><span>電子郵件：</span></li>" + "<ul>" + data['email'] + "</ul>" +
                         "<li><span>報名人系級：</span>" + data["grade"] + "</li>" +
                         "<li><span>報名人姓名：</span>" + data["name"] + "</li>" +
                         "<li><span>報名人學號：</span>" + data["stunumber"] + "</li>" +
-                        "<li><span>隊伍／個人名稱：</span>" + data["teamname"] + "</li>" +
+                        "<li><span>隊伍／個人名稱：</span></li>" + "<ul>" +  data["teamname"] + "</ul>" +
                         "<li><span>隊伍成員：</span>" + "</li>" +
                         "<ol>" + getMemberData(team_member) + "</ol>" + 
                         "<li><span>報名費用／報名狀態：</span></li>" +
                         "<ol class='paid_info'>" + paid_info +"</ol>";
     $(".signUpinfo").html(list_content);
+}
+
+toggleRule("Aov");
+$(".Aov_rule").click(function (e) { 
+    $(".Aov_rule").addClass("active");
+    $(".Lol_rule").removeClass("active"); 
+    $(".Mj_rule").removeClass("active"); 
+    toggleRule("Aov");
+});
+
+$(".Lol_rule").click(function (e) { 
+    $(".Aov_rule").removeClass("active");
+    $(".Lol_rule").addClass("active"); 
+    $(".Mj_rule").removeClass("active"); 
+    toggleRule("Lol");
+});
+
+$(".Mj_rule").click(function (e) { 
+    $(".Aov_rule").removeClass("active");
+    $(".Lol_rule").removeClass("active"); 
+    $(".Mj_rule").addClass("active"); 
+    toggleRule("Mj");
+});
+
+function toggleRule(game) { 
+    get(child(dbRef, 'Rules/' + game)).then((snapshot) => {
+        var ruleArray = snapshot.val();
+        for(var i = 0; i < items.length; i++){
+            $(".item_" + i).html(ruleArray["rule_"+ i]);
+        }
+    });
 }
