@@ -231,3 +231,69 @@ body::-webkit-scrollbar{
     width: 100%;
     height: 100%;
 }
+
+.discord{
+    display: flex;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: #212A3E;
+    justify-content: center;
+    align-items: center;
+    bottom: 2%;
+    right: 2%;
+    opacity: 0.8;
+    transition: 0.5s linear;
+}
+
+.discord:hover{
+    opacity: 1;
+}
+
+.discord > img{
+    position: relative;
+    width: 60%;
+}
+
+#participate_area{
+    position: absolute;
+    height: 85%;
+    width: 100%;
+    top: 10%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    display: none;
+    flex-direction: column;
+}
+
+#schedule_area{
+    position: absolute;
+    height: 85%;
+    width: 100%;
+    top: 10%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    display: none;
+    flex-direction: column;
+}
+
+#record_area{
+    position: absolute;
+    height: 85%;
+    width: 100%;
+    top: 10%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    display: none;
+    flex-direction: column;
+}
+
+.noEnter {
+    font-size: 5rem;
+    color: white;
+    font-weight: bold;
+}

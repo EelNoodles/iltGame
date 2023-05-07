@@ -29,9 +29,6 @@ $(".menu_area").click(function (e) {
 
 function togglePage(page) {
     $("#" + page + "_area").css("display", "flex");
-    if(page != "signUp" && page != "mainPage" && page != "rule"){
-        alert("開發中，目前只開放報名查詢。")
-    }
 }
 
 let items = document.querySelectorAll('.slider .item');
