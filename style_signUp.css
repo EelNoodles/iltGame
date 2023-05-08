@@ -1,12 +1,8 @@
 #signUp_area{
-    position: absolute;
     height: 80%;
-    width: 100%;
     top: 10%;
-    justify-content: center;
     align-items: start;
     flex-direction: row;
-    display: none;
 }
 
 .sty_signUp{

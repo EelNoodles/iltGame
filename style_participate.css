@@ -1,0 +1,181 @@
+#participate_area{
+    top: 13%;
+    justify-content: start;
+    height: 85%;
+    overflow-y: scroll;
+}
+
+.part_table{
+    width: 95%;
+    max-height: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    transition: 0.5s linear;
+}
+
+.part_table.active{
+    filter: blur(5px);
+}
+
+
+.part_table > tbody > tr > td{
+    color: #F1F6F9;
+    font-weight: bold;
+    font-size: 1.2rem;
+    background-color: rgba(155, 164, 181, 0.5);
+    padding: 15px;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+
+.part_table > tbody > tr:nth-child(even){
+    background-color: rgba(155, 164, 181, 0.7);
+}
+
+.part_table > tbody > tr:nth-child(odd):not(.th_title){
+    background-color: rgba(33, 42, 62, 0.7)
+}
+
+.part_table > tbody > tr > th{
+    position: sticky;
+    top: -1px;
+    color: #F1F6F9;
+    font-weight: bold;
+    font-size: 1.3rem;
+    background-color: rgba(0, 0, 0, 1);
+    padding: 8px;
+    z-index: 1;
+}
+
+.part_table > tbody > tr > th.th_1{
+    width: 15%;
+}
+
+.part_table > tbody > tr > th.th_2, .part_table > tbody > tr > th.th_3{
+    width: 20%;
+}
+
+.part_table > tbody > tr > td:nth-child(4){
+    text-align: left;
+}
+
+.table_img{
+    width: 50%;
+    aspect-ratio: 1/1;
+}
+
+.member_btn{
+    width: 40%;
+    font-size: 1rem;
+    padding: 10%;
+    border-radius: 0.5rem;
+    color: #F1F6F9;
+    font-weight: bold;
+    background-color: #212A3E;
+    transition: 1s linear;
+    position: relative;
+    border: 0;
+    text-align: center;
+    user-select: none;
+    display: none;
+}
+
+.member_btn:hover{
+    background-color: #212A3E;
+}
+
+.member_btn::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 0.4rem;
+    transition: 1s;
+    box-shadow: 0 0 100px 15px #212A3E;
+    opacity: 0;
+}
+
+.member_btn:active:after{    
+    transition: 0s;
+    box-shadow: 0 0 0px 0px #212A3E;
+    opacity: 1;
+}
+
+
+.dialog_member{
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .part_table > tbody > tr > th{
+        font-size: 1.2rem;
+    }
+
+    .part_table > tbody > tr > td{
+        font-size: 1rem;
+    }
+
+    .table_img{
+        width: 100%;
+        aspect-ratio: 1/1;
+    }
+
+    .part_table > tbody > tr > th.th_2, .part_table > tbody > tr > th.th_3{
+        width: 25%;
+    }
+
+    .part_table > tbody > tr > td:nth-child(4){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .member_btn{
+        display: block;
+        z-index: 0;
+    }
+
+    .part_member_list{
+        display: none;
+    }
+
+    .dialog_title{
+        font-size: 1.2rem;
+        color: #F1F6F9;
+        background-color: #212A3E;
+        padding: 15px;
+        font-weight: bold;
+    }
+
+    .dialog_member{
+        display: block;
+        position: fixed;
+        top: 30%;
+        width: 85%;
+        overflow-y: scroll;
+        background-color: rgba(255, 255, 255, 0.9);
+        border-radius: 20px;
+        opacity: 0;
+        z-index: -1;
+        transition: 0.5s linear;
+    }
+    
+    .dialog_close{
+        position: absolute;
+        right: 5%;
+        width: 8%;
+        aspect-ratio: 1/1;
+    }
+
+    .dialog_content{
+        padding: 20px;
+        font-size: 1rem;
+        line-height: 2rem;
+    }
+
+    .dialog_member.active{
+        opacity: 1;
+        z-index: 1;
+    }
+    
+}

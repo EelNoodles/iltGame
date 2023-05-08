@@ -85,6 +85,14 @@ function getMemberData(data) {
     return member_list;
 }
 
+function getMemberTableData(data) {  
+    var member_list = ""
+    data.forEach(element => {
+        member_list += element + "<br>";
+    })
+    return member_list;
+}
+
 function signUpinfoGernerate(data, paid_info, team_member){ 
     var list_content = "<li><span>隊伍編號：</span>" + data["id"] + "</li>" +
                         "<li><span>電子郵件：</span></li>" + "<ul>" + data['email'] + "</ul>" +
@@ -129,3 +137,45 @@ function toggleRule(game) {
         }
     });
 }
+
+$("#participate").click(() => {
+    loadParticipate();
+});
+
+async function loadParticipate(){
+    await get(child(dbRef, 'RegistrationGroup')).then((snapshot) => {
+        if (snapshot.exists()) {
+            var tableArray = '<tr class="th_title"><th class="th_1">遊戲類型</th><th class="th_2">隊長</th><th class="th_3">隊名</th><th class="th_4">隊員</th></tr>'
+            var count = 0;
+            for (const [RegistrationGroup, RegValue] of Object.entries(snapshot.val())) {
+                for (const [key, value] of Object.entries(RegValue)) {
+                    var gameType = "";
+                    if(value["id"].includes("Aov")){
+                        gameType = "<td><img src='res/aov.png' class='table_img'></td>"
+                    }else if(value["id"].includes("Lol")){
+                        gameType = "<td><img src='res/lol.png' class='table_img'></td>"
+                    }else{
+                        gameType = "<td><img src='res/mj.png' class='table_img'></td>"
+                    }
+                    tableArray += `<tr>${gameType}<td>${value["grade"]} ／ ${value["name"]}</td><td>${value["teamname"]}</td><td><div class='part_member_list' id='part_member_list_${count}'>${getMemberTableData(value["member"].split(","))}</div><div class='member_btn' id='member_list_${count}'>查看成員</div></td></tr>`
+                    count++;
+                }
+              }
+              $(".part_table_body").html(tableArray);
+        }
+    });
+
+    var allMemberBtn = document.querySelectorAll(".member_btn");
+    allMemberBtn.forEach(element => {
+        element.addEventListener("click", ()=>{
+            $(".dialog_content").html($("#part_" + element.id).html());
+            $(".part_table").addClass("active");
+            $(".dialog_member").addClass("active");
+        })
+    })
+}
+
+$(".dialog_close").click(()=>{
+    $(".part_table").removeClass("active");
+    $(".dialog_member").removeClass("active");
+});

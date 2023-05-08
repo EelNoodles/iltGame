@@ -5,6 +5,7 @@ nav_btn.forEach(element => {
         if(nowPage != element.id && nowPage =="mainPage"){
             $(".content_area").toggleClass("active");
             $(".title_area").toggleClass("active");
+            $("#" + nowPage + "_area").removeClass("show");
             $("#" + nowPage + "_area").css("display", "none");
             nowPage = element.id;
             togglePage(element.id);
@@ -13,6 +14,7 @@ nav_btn.forEach(element => {
                 $(".content_area").toggleClass("active");
                 $(".title_area").toggleClass("active");
             }
+            $("#" + nowPage + "_area").removeClass("show");
             $("#" + nowPage + "_area").css("display", "none");
             nowPage = element.id;
             togglePage(nowPage);
@@ -29,6 +31,7 @@ $(".menu_area").click(function (e) {
 
 function togglePage(page) {
     $("#" + page + "_area").css("display", "flex");
+    $("#" + page + "_area").addClass("show");
 }
 
 let items = document.querySelectorAll('.slider .item');

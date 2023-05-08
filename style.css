@@ -228,8 +228,14 @@ body::-webkit-scrollbar{
 
 .content_style{
     position: absolute;
+    height: 85%;
     width: 100%;
-    height: 100%;
+    top: 10%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    display: none;
+    flex-direction: column;
 }
 
 .discord{
@@ -254,42 +260,6 @@ body::-webkit-scrollbar{
 .discord > img{
     position: relative;
     width: 60%;
-}
-
-#participate_area{
-    position: absolute;
-    height: 85%;
-    width: 100%;
-    top: 10%;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    display: none;
-    flex-direction: column;
-}
-
-#schedule_area{
-    position: absolute;
-    height: 85%;
-    width: 100%;
-    top: 10%;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    display: none;
-    flex-direction: column;
-}
-
-#record_area{
-    position: absolute;
-    height: 85%;
-    width: 100%;
-    top: 10%;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    display: none;
-    flex-direction: column;
 }
 
 .noEnter {
