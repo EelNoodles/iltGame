@@ -66,7 +66,9 @@
 }
 
 .member_btn{
+    position: relative;
     width: 40%;
+    height: 100%;
     font-size: 1rem;
     padding: 10%;
     border-radius: 0.5rem;
@@ -74,33 +76,11 @@
     font-weight: bold;
     background-color: #212A3E;
     transition: 1s linear;
-    position: relative;
     border: 0;
     text-align: center;
     user-select: none;
     display: none;
 }
-
-.member_btn:hover{
-    background-color: #212A3E;
-}
-
-.member_btn::after{
-    content: "";
-    position: absolute;
-    inset: 0;
-    border-radius: 0.4rem;
-    transition: 1s;
-    box-shadow: 0 0 100px 15px #212A3E;
-    opacity: 0;
-}
-
-.member_btn:active:after{    
-    transition: 0s;
-    box-shadow: 0 0 0px 0px #212A3E;
-    opacity: 1;
-}
-
 
 .dialog_member{
     display: none;
@@ -131,6 +111,7 @@
     }
 
     .member_btn{
+        height: 100%;
         display: block;
         z-index: 0;
     }
@@ -165,6 +146,7 @@
         right: 5%;
         width: 8%;
         aspect-ratio: 1/1;
+        user-select: none;
     }
 
     .dialog_content{
