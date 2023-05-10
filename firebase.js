@@ -146,6 +146,14 @@ $("#schedule").click(() => {
     loadSchedule("Aov");
 });
 
+$("#record").click(() => {
+    loadRecode("Aov");
+});
+
+$("#grade").click(() => {
+    loadGrade("Aov");
+});
+
 async function loadParticipate(){
     await get(child(dbRef, 'RegistrationGroup')).then((snapshot) => {
         if (snapshot.exists()) {
@@ -221,9 +229,56 @@ async function loadSchedule(type){
                 }else{
                     gameType = "<td><img src='res/mj.png' class='table_img'></td>"
                 }
-                tableArray += `<tr>${gameType}<td>${getTeamData(RegValue["team"])}</td><td>${gettimeFormat(RegValue["time"])}</td></tr>`
+                var isOver = RegValue["over"] != false ? "style='display: none'":"";
+                tableArray += `<tr ${isOver}">${gameType}<td>${getTeamData(RegValue["team"])}</td><td>${gettimeFormat(RegValue["time"])}</td></tr>`
               }
               $(".schedule_table_body").html(tableArray);
+        }
+    });
+}
+
+$(".Aov_record").click(function (e) { 
+    $(".Aov_record").addClass("active");
+    $(".Lol_record").removeClass("active"); 
+    $(".Mj_record").removeClass("active"); 
+    $(".record_table_body").html("");
+    loadRecode("Aov");
+});
+
+$(".Lol_record").click(function (e) { 
+    $(".Aov_record").removeClass("active");
+    $(".Lol_record").addClass("active"); 
+    $(".Mj_record").removeClass("active"); 
+    $(".record_table_body").html("");
+    loadRecode("Lol");
+});
+
+$(".Mj_record").click(function (e) { 
+    $(".Aov_record").removeClass("active");
+    $(".Lol_record").removeClass("active"); 
+    $(".Mj_record").addClass("active"); 
+    $(".record_table_body").html("");
+    loadRecode("Mj");
+});
+
+
+async function loadRecode(type){
+    await get(child(dbRef, 'Schedule/' + type)).then((snapshot) => {
+        if (snapshot.exists()) {
+            var tableArray = '<tr class="th_title"><th class="th_1">遊戲類型</th><th class="th_2">競賽隊伍</th><th class="th_3">競賽時間</th></tr>'
+            for (const [RegistrationGroup, RegValue] of Object.entries(snapshot.val())) {
+                var gameType = "";
+                if(type === "Aov"){
+                    gameType = "<td><img src='res/aov.png' class='table_img'></td>"
+                }else if(type === "Lol"){
+                    gameType = "<td><img src='res/lol.png' class='table_img'></td>"
+                }else{
+                    gameType = "<td><img src='res/mj.png' class='table_img'></td>"
+                }
+                var isOver = RegValue["over"] != false ? "":"style='display: none'";
+                tableArray += `<tr ${isOver}">${gameType}<td>${getTeamDatawithOver(type, RegValue["team"], RegValue["over"])}</td><td>${gettimeFormat(RegValue["time"])}</td></tr>`
+              }
+              $(".record_table_body").html(tableArray);
         }
     });
 }
@@ -237,8 +292,73 @@ function getTeamData(i){
     return final;
 }
 
+function getTeamDatawithOver(type, i, over){
+    console.log(over)
+    var teamArray = i.split(",");
+    if(type === "Mj"){
+        var gradeArray = String(over).split(",")
+        var final = `${teamArray[0]}<span style="font-weight:bold; color: yellow;">（${gradeArray[0]}）</span>`
+        for (let index = 1; index < teamArray.length; index++) {
+            final += ` VS. ${teamArray[index]}<span style="font-weight:bold; color: yellow;">（${gradeArray[index]}）</span>`
+        }
+    }else{
+        switch(over){
+            case "left":
+                var final = `<span style="font-weight:bold; color: yellow;"><span class="win">（WIN）</span>${teamArray[0]}</span> VS. `;
+                final += `<span style="opacity: 0.6;">${teamArray[1]}</span>`;
+                break;
+            case "right":
+                var final = `<span style="opacity: 0.6;">${teamArray[1]}</span> VS. `;
+                final += `<span style="font-weight:bold; color: yellow;">${teamArray[0]}<span class="win">（WIN）</span></span>`;
+                break;
+        }
+    }
+
+    return final;
+}
+
 function gettimeFormat(p) {
     var timeString = String(p);
-    var time = `${timeString.slice(0, 1)} / ${timeString.slice(1, 3)}<br><span style='font-size: 1.5rem; color: yellow;'">${timeString.slice(3, 5)}：${timeString.slice(5, 7)}</span>`;
+    var time = `${timeString.slice(0, 1)} / ${timeString.slice(1, 3)}<br><span style='font-size: 1.5rem; color: grey;'">${timeString.slice(3, 5)}：${timeString.slice(5, 7)}</span>`;
     return time;
+}
+
+async function loadGrade(){
+    await get(child(dbRef, 'RegistrationGroup')).then((snapshot) => {
+        if (snapshot.exists()) {
+            var tableArray = '<tr class="th_title"><th class="th_1">遊戲類型</th></th><th class="th_3">隊名</th><th class="th_4">目前成績</th></tr>'
+            var count = 0;
+            for (const [RegistrationGroup, RegValue] of Object.entries(snapshot.val())) {
+                for (const [key, value] of Object.entries(RegValue)) {
+                    var gameType = "";
+                    var type = "Group"
+                    var valueType = "winNlose"
+                    if(value["id"].includes("Aov")){
+                        gameType = "<td><img src='res/aov.png' class='table_img'></td>"
+                    }else if(value["id"].includes("Lol")){
+                        gameType = "<td><img src='res/lol.png' class='table_img'></td>"
+                    }else{
+                        gameType = "<td><img src='res/mj.png' class='table_img'></td>"
+                        valueType = "grade"
+                        type = "Mj"
+                    }
+                    tableArray += `<tr>${gameType}<td>${value["teamname"]}</td><td>${getGrade(value[valueType], type)}</td></tr>`
+                    count++;
+                }
+              }
+              $(".grade_table_body").html(tableArray);
+        }
+    });
+}
+
+function getGrade(value, type) {
+    var returnString = ""
+    if(type === "Mj"){
+        returnString = `積分：<span style="font-weight:bold; color: yellow;">${value}</span>`
+    }else{
+        var a = value.split("/")
+        returnString = `勝場：<span style="font-weight:bold; color: yellow;">${a[0]}</span><br>敗場：<span style="font-weight:bold; color: yellow;">${a[1]}</span>`
+    }
+
+    return returnString;
 }

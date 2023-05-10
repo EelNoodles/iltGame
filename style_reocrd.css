@@ -1,0 +1,123 @@
+.record_chose_area{
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.record_chose_area > h3{
+    position: relative;
+    color: #F1F6F9;
+    padding: 10px;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.3);
+    opacity: 0.8;
+    transition: 0.5s linear;
+}
+
+.record_chose_area > h3.active{
+    background-color: rgba(252, 106, 80, 0.8);
+    transition: 0.5s linear;
+    opacity: 1;
+}
+
+.record_chose_area > h3:hover{
+    opacity: 1;
+}
+
+.record_chose_area > h3::before{
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 100%;
+    background-color: #fc6a50;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transition: 0.3s linear;
+}
+
+.record_chose_area > h3:hover::before{
+    content: "";
+    transform: scaleX(1);
+}
+
+.record_table_area{
+    width: 90%;
+    height: 85%;
+    overflow-y: scroll;
+}
+
+.record_table{
+    width: 100%;
+    max-height: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    transition: 0.5s linear;
+}
+
+.record_table > tbody > tr > th{
+    position: sticky;
+    top: -1px;
+    color: #F1F6F9;
+    font-weight: bold;
+    font-size: 1.3rem;
+    background-color: rgba(0, 0, 0, 1);
+    padding: 15px;
+    z-index: 1;
+}
+
+.record_table > tbody > tr > td{
+    color: #F1F6F9;
+    font-weight: bold;
+    font-size: 1.2rem;
+    background-color: rgba(155, 164, 181, 0.5);
+    padding: 15px;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+.record_table > tbody > tr:nth-child(even){
+    background-color: rgba(155, 164, 181, 0.7);
+}
+
+.record_table > tbody > tr:nth-child(odd):not(.th_title){
+    background-color: rgba(33, 42, 62, 0.7)
+}
+
+.record_table > tbody > tr > th:nth-child(1){
+    width: 15%;
+}
+
+.record_table > tbody > tr > td:nth-child(1){
+    width: 15%;
+}
+
+.record_table > tbody > tr > th:nth-child(3){
+    width: 25%;
+}
+
+.record_table > tbody > tr > td:nth-child(3){ 
+    width: 25%;
+}
+
+.win{
+    font-size: 0.6rem;
+    animation: color 2s linear infinite;
+}
+
+@keyframes color {
+    to{
+        filter: hue-rotate(360deg);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .record_chose_area{
+        width: 100%;
+    }
+
+    .record_table > tbody > tr > td:nth-child(2){
+        line-height: 150%;
+    }
+}

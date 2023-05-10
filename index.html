@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="style_loading.css">
     <link rel="stylesheet" href="style_participate.css">
     <link rel="stylesheet" href="style_schedule.css">
+    <link rel="stylesheet" href="style_reocrd.css">
+    <link rel="stylesheet" href="style_grade.css">
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 </head>
 <body>
@@ -119,6 +121,7 @@
             </table>
             <div class="dialog_member"><div class="dialog_title"><img src="res/close.png" class="dialog_close">隊伍清單</div><div class="dialog_content"></div></div>
         </div>
+        <!-- 賽程頁面 -->
         <div id="schedule_area" class="content_style">
             <h3 style="color: #F1F6F9;">請選擇要查詢的競賽</h2>
                 <div class="schedule_chose_area">
@@ -138,8 +141,38 @@
                 </table>
             </div>
         </div>
+        <div id="grade_area" class="content_style">
+            <div class="grade_table_area">
+                <table class="grade_table">
+                    <tbody class="grade_table_body">
+                        <tr class="th_title">
+                            <th class="th_1">遊戲類型</th>
+                            <th class="th_2">競賽隊伍</th>
+                            <th class="th_3">競賽時間</th>
+                          </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!-- 紀錄頁面 -->
         <div id="record_area" class="content_style">
-            <div class="noEnter">尚未開放</div>
+            <h3 style="color: #F1F6F9;">請選擇要查詢的競賽</h2>
+                <div class="schedule_chose_area">
+                    <h3 class="Aov_record active">傳說對決</h3>
+                    <h3 class="Lol_record">英雄聯盟</h3>
+                    <h3 class="Mj_record">雀魂日麻</h3>
+                </div>
+            <div class="schedule_table_area">
+                <table class="record_table">
+                    <tbody class="record_table_body">
+                        <tr class="th_title">
+                            <th class="th_1">遊戲類型</th>
+                            <th class="th_2">競賽結果</th>
+                            <th class="th_3">競賽時間</th>
+                          </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
     <div class="nav_bar">
@@ -153,6 +186,7 @@
         <p class="nav_text" id="signUp">報名狀態</p>
         <p class="nav_text" id="participate">參賽隊伍</p>
         <p class="nav_text" id="schedule">賽事排程</p>
+        <p class="nav_text" id="grade">賽事分數</p>
         <p class="nav_text" id="record">賽事紀錄</p>
     </div>
     <div class="loading_box">

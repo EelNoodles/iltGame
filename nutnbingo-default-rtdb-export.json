@@ -9,7 +9,8 @@
         "name": "廖彩慧",
         "paid": "free",
         "stunumber": "S10955003",
-        "teamname": "回歸禮包1400"
+        "teamname": "回歸禮包1400",
+        "winNlose": "0/0"
       },
       "groupAov_002": {
         "email": "s10855003@stumail.nutn.edu.tw",
@@ -19,7 +20,8 @@
         "name": "蔡逸澄",
         "paid": "free",
         "stunumber": "S10855003",
-        "teamname": "一刀殺進去"
+        "teamname": "一刀殺進去",
+        "winNlose": "1/0"
       },
       "groupAov_003": {
         "email": "suweichen122002@gmail.com",
@@ -29,7 +31,8 @@
         "name": "蘇暐宸",
         "paid": "paid",
         "stunumber": "S11022020",
-        "teamname": "老大不小，老二賊大"
+        "teamname": "老大不小，老二賊大",
+        "winNlose": "0/0"
       },
       "groupAov_004": {
         "email": "alanliu065957@gmail.com",
@@ -39,7 +42,8 @@
         "name": "劉安倫",
         "paid": "paid",
         "stunumber": "S11158022",
-        "teamname": "Diego"
+        "teamname": "Diego",
+        "winNlose": "0/1"
       },
       "groupAov_005": {
         "email": "aqz58828433@gmail.com",
@@ -49,7 +53,8 @@
         "name": "李禹翰",
         "paid": "paid",
         "stunumber": "S11155015",
-        "teamname": "魯蛇陳宥安"
+        "teamname": "魯蛇陳宥安",
+        "winNlose": "1/0"
       },
       "groupAov_006": {
         "email": "901103jason@gmail.com",
@@ -59,7 +64,8 @@
         "name": "徐弘宇",
         "paid": "free",
         "stunumber": "S10955002",
-        "teamname": "你可以汙辱我，但不可以烏魯木齊"
+        "teamname": "你可以汙辱我，但不可以烏魯木齊",
+        "winNlose": "0/1"
       },
       "groupLol_001": {
         "email": "a753463@gmail.com",
@@ -69,7 +75,8 @@
         "name": "蕭淳云",
         "paid": "free",
         "stunumber": "S10855009",
-        "teamname": "FB搜尋 新竹黃捷 千斤頂jack"
+        "teamname": "FB搜尋 新竹黃捷 千斤頂jack",
+        "winNlose": "0/0"
       },
       "groupLol_002": {
         "email": "S11055042@gm2.nutn.edu.tw",
@@ -79,7 +86,8 @@
         "name": "林泊安",
         "paid": "paid",
         "stunumber": "S11055042",
-        "teamname": "數位扣將"
+        "teamname": "數位扣將",
+        "winNlose": "0/0"
       },
       "groupLol_003": {
         "email": "s10855014@gm2.nutn.edu.tw",
@@ -89,7 +97,8 @@
         "name": "曾奕勛",
         "paid": "free",
         "stunumber": "S10855014",
-        "teamname": "ILT T1"
+        "teamname": "ILT T1",
+        "winNlose": "0/0"
       },
       "groupLol_004": {
         "email": "asd30891750@gmail.com",
@@ -99,7 +108,8 @@
         "name": "徐碩亨",
         "paid": "free",
         "stunumber": "S10955008",
-        "teamname": "盧奕捷與他的快樂夥伴"
+        "teamname": "盧奕捷與他的快樂夥伴",
+        "winNlose": "0/0"
       },
       "groupLol_005": {
         "email": "yvching0626@gmail.com",
@@ -109,7 +119,8 @@
         "name": "游鎮安",
         "paid": "paid",
         "stunumber": "S10912080",
-        "teamname": "啊對對對對隊"
+        "teamname": "啊對對對對隊",
+        "winNlose": "0/0"
       },
       "groupLol_006": {
         "email": "s10972028@gm2.nutn.edu.tw",
@@ -119,11 +130,12 @@
         "name": "王翔昱",
         "paid": "paid_100",
         "stunumber": "S10972028",
-        "teamname": "皮皮蝦"
+        "teamname": "皮皮蝦",
+        "winNlose": "0/0"
       },
       "singleMj_001": {
         "email": "ning51112893@gmail.com",
-        "grade": "數位二",
+        "grade": 0,
         "id": "singleMj_001",
         "member": "solo",
         "name": "張涴婷",
@@ -133,7 +145,7 @@
       },
       "singleMj_002": {
         "email": "s10855012@gm2.nutn.edu.tw",
-        "grade": "數位四",
+        "grade": 0,
         "id": "singleMj_002",
         "member": "solo",
         "name": "陳奕潤",
@@ -143,7 +155,7 @@
       },
       "singleMj_003": {
         "email": "peitsoliu@gmail.com",
-        "grade": "國三甲",
+        "grade": 0,
         "id": "singleMj_003",
         "member": "solo",
         "name": "劉倍佐",
@@ -153,7 +165,7 @@
       },
       "singleMj_004": {
         "email": "charlieyen1114@gmail.com",
-        "grade": "數位一",
+        "grade": 0,
         "id": "singleMj_004",
         "member": "solo",
         "name": "閻承林",
@@ -163,7 +175,7 @@
       },
       "singleMj_005": {
         "email": "jimmy.f9366@gmail.com",
-        "grade": "資工四",
+        "grade": 0,
         "id": "singleMj_005",
         "member": "solo",
         "name": "吳政賢",
@@ -173,7 +185,7 @@
       },
       "singleMj_006": {
         "email": "ccm20010129@gmail.com",
-        "grade": "資工四",
+        "grade": 0,
         "id": "singleMj_006",
         "member": "solo",
         "name": "鄭豈名",
@@ -183,7 +195,7 @@
       },
       "singleMj_007": {
         "email": "s10855024@gm2.nutn.edu.tw",
-        "grade": "數位四",
+        "grade": 0,
         "id": "singleMj_007",
         "member": "solo",
         "name": "邱讌壹",
@@ -193,7 +205,7 @@
       },
       "singleMj_008": {
         "email": "wangyoung0504@gmail.com",
-        "grade": "數位二",
+        "grade": 0,
         "id": "singleMj_008",
         "member": "solo",
         "name": "王政揚",
@@ -203,7 +215,7 @@
       },
       "singleMj_009": {
         "email": "tracyhuang208@gmail.com",
-        "grade": "數位三",
+        "grade": 0,
         "id": "singleMj_009",
         "member": "solo",
         "name": "黃慈鎔",
@@ -213,7 +225,7 @@
       },
       "singleMj_010": {
         "email": "jodon0932771205@gmail.com",
-        "grade": "數位三",
+        "grade": 0,
         "id": "singleMj_010",
         "member": "solo",
         "name": "吳柄城",
@@ -223,7 +235,7 @@
       },
       "singleMj_011": {
         "email": "a1a2a3a4a30@gmail.com",
-        "grade": "資工四",
+        "grade": 0,
         "id": "singleMj_011",
         "member": "solo",
         "name": "陳冠綸",
@@ -233,7 +245,7 @@
       },
       "singleMj_012": {
         "email": "ytes10419@gmail.com",
-        "grade": "數位二",
+        "grade": 0,
         "id": "singleMj_012",
         "member": "solo",
         "name": "江義翔",
@@ -243,7 +255,7 @@
       },
       "singleMj_013": {
         "email": "s10855028@gm2.nutn.edu.tw",
-        "grade": "數位四",
+        "grade": 0,
         "id": "singleMj_013",
         "member": "solo",
         "name": "張祐綱",
@@ -253,7 +265,7 @@
       },
       "singleMj_014": {
         "email": "pa147258369277@gmail.com",
-        "grade": "國二甲",
+        "grade": 0,
         "id": "singleMj_014",
         "member": "solo",
         "name": "劉子菱",
@@ -263,7 +275,7 @@
       },
       "singleMj_015": {
         "email": "s10955014@gm2.nutn.edu.tw",
-        "grade": "數位三",
+        "grade": 0,
         "id": "singleMj_015",
         "member": "solo",
         "name": "張浩恩",
@@ -273,7 +285,7 @@
       },
       "singleMj_016": {
         "email": "ss89102535@gmail.com",
-        "grade": "數位四",
+        "grade": 0,
         "id": "singleMj_016",
         "member": "solo",
         "name": "謝宇勝",
@@ -283,7 +295,7 @@
       },
       "singleMj_017": {
         "email": "qawsed58834@gmail.com",
-        "grade": "數位四",
+        "grade": 0,
         "id": "singleMj_017",
         "member": "solo",
         "name": "郭柔嶔",
@@ -293,7 +305,7 @@
       },
       "singleMj_018": {
         "email": "yolobao@gmail.com",
-        "grade": "文資四",
+        "grade": 0,
         "id": "singleMj_018",
         "member": "solo",
         "name": "包丞竣",
@@ -303,7 +315,7 @@
       },
       "singleMj_019": {
         "email": "s10955038@gm2.nutn.edu.tw",
-        "grade": "數位三",
+        "grade": 0,
         "id": "singleMj_019",
         "member": "solo",
         "name": "莊承新",
@@ -313,7 +325,7 @@
       },
       "singleMj_020": {
         "email": "0429jerry@gmail.com",
-        "grade": "數位三",
+        "grade": 0,
         "id": "singleMj_020",
         "member": "solo",
         "name": "謝秉均",
@@ -323,7 +335,7 @@
       },
       "singleMj_021": {
         "email": "s10955006@gm2.nutn.edu.tw",
-        "grade": "數位三",
+        "grade": 0,
         "id": "singleMj_021",
         "member": "solo",
         "name": "童逸",
@@ -331,9 +343,9 @@
         "stunumber": "S10955006",
         "teamname": "NightSky"
       },
-	  "singleMj_022": {
+      "singleMj_022": {
         "email": "s10955018@gm2.nutn.edu.tw",
-        "grade": "數位三",
+        "grade": 0,
         "id": "singleMj_022",
         "member": "solo",
         "name": "顏玉傑",
@@ -378,41 +390,56 @@
   "Schedule": {
     "Aov": {
       "5101500": {
+        "over": "left",
         "team": "一刀殺進去,你可以汙辱我，但不可以烏魯木齊",
-        "time": 5101500,
-		"over": false
+        "time": 5101500
       },
-	  "5101600": {
+      "5101600": {
+        "over": "right",
         "team": "Diego,魯蛇陳宥安",
-        "time": 5101600,
-		"over": false
+        "time": 5101600
       },
-	  "5101700": {
+      "5101700": {
+        "over": false,
         "team": "魯蛇陳宥安,老大不小，老二賊大",
-        "time": 5101700,
-		"over": false
+        "time": 5101700
       },
-	  "5171400": {
+      "5171400": {
+        "over": false,
         "team": "回歸禮包1400,一刀殺進去",
-        "time": 5171400,
-		"over": false
+        "time": 5171400
       },
-	  "5171500": {
+      "5171500": {
+        "over": false,
         "team": "回歸禮包1400,你可以汙辱我，但不可以烏魯木齊",
-        "time": 5171500,
-		"over": false
+        "time": 5171500
       },
-	  "5171600": {
+      "5171600": {
+        "over": false,
         "team": "Diego,老大不小，老二賊大",
-        "time": 5171600,
-		"over": false
+        "time": 5171600
       }
     },
-	"Mj": {
+    "Mj": {
       "5102200": {
+        "over": false,
         "team": "七萬怎麼輸,電腦摸切,星光奪目,電子競技沒有愛情",
-        "time": 5102200,
-		"over": false
+        "time": 5102200
+      },
+      "5112103": {
+        "over": false,
+        "team": "光天香香雞,昂耨,jelliudge,心夜空想",
+        "time": 5112103
+      },
+      "5131900": {
+        "over": false,
+        "team": "夢想追逐者,電腦摸切,yongfus,我日你麻",
+        "time": 5112103
+      },
+      "5132100": {
+        "over": false,
+        "team": "夢想追逐者,大雷包,專業榮民,全紅豹子",
+        "time": 5132100
       }
     }
   }
