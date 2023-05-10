@@ -230,7 +230,7 @@ async function loadSchedule(type){
                     gameType = "<td><img src='res/mj.png' class='table_img'></td>"
                 }
                 var isOver = RegValue["over"] != false ? "style='display: none'":"";
-                tableArray += `<tr ${isOver}">${gameType}<td>${getTeamData(RegValue["team"])}</td><td>${gettimeFormat(RegValue["time"])}</td></tr>`
+                tableArray += `<tr ${isOver}">${gameType}<td>${getTeamData(RegValue["team"])}</td><td>${gettimeFormat(RegValue["time"], "yellow")}</td></tr>`
               }
               $(".schedule_table_body").html(tableArray);
         }
@@ -276,7 +276,7 @@ async function loadRecode(type){
                     gameType = "<td><img src='res/mj.png' class='table_img'></td>"
                 }
                 var isOver = RegValue["over"] != false ? "":"style='display: none'";
-                tableArray += `<tr ${isOver}">${gameType}<td>${getTeamDatawithOver(type, RegValue["team"], RegValue["over"])}</td><td>${gettimeFormat(RegValue["time"])}</td></tr>`
+                tableArray += `<tr ${isOver}">${gameType}<td>${getTeamDatawithOver(type, RegValue["team"], RegValue["over"])}</td><td>${gettimeFormat(RegValue["time"], "grey")}</td></tr>`
               }
               $(".record_table_body").html(tableArray);
         }
@@ -317,9 +317,9 @@ function getTeamDatawithOver(type, i, over){
     return final;
 }
 
-function gettimeFormat(p) {
+function gettimeFormat(p, color) {
     var timeString = String(p);
-    var time = `${timeString.slice(0, 1)} / ${timeString.slice(1, 3)}<br><span style='font-size: 1.5rem; color: grey;'">${timeString.slice(3, 5)}：${timeString.slice(5, 7)}</span>`;
+    var time = `${timeString.slice(0, 1)} / ${timeString.slice(1, 3)}<br><span style='font-size: 1.5rem; color: ${color};'">${timeString.slice(3, 5)}：${timeString.slice(5, 7)}</span>`;
     return time;
 }
 
