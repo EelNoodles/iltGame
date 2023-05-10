@@ -142,6 +142,10 @@ $("#participate").click(() => {
     loadParticipate();
 });
 
+$("#schedule").click(() => {
+    loadSchedule("Aov");
+});
+
 async function loadParticipate(){
     await get(child(dbRef, 'RegistrationGroup')).then((snapshot) => {
         if (snapshot.exists()) {
@@ -179,3 +183,62 @@ $(".dialog_close").click(()=>{
     $(".part_table").removeClass("active");
     $(".dialog_member").removeClass("active");
 });
+
+$(".Aov_schedule").click(function (e) { 
+    $(".Aov_schedule").addClass("active");
+    $(".Lol_schedule").removeClass("active"); 
+    $(".Mj_schedule").removeClass("active"); 
+    $(".schedule_table_body").html("");
+    loadSchedule("Aov");
+});
+
+$(".Lol_schedule").click(function (e) { 
+    $(".Aov_schedule").removeClass("active");
+    $(".Lol_schedule").addClass("active"); 
+    $(".Mj_schedule").removeClass("active"); 
+    $(".schedule_table_body").html("");
+    loadSchedule("Lol");
+});
+
+$(".Mj_schedule").click(function (e) { 
+    $(".Aov_schedule").removeClass("active");
+    $(".Lol_schedule").removeClass("active"); 
+    $(".Mj_schedule").addClass("active"); 
+    $(".schedule_table_body").html("");
+    loadSchedule("Mj");
+});
+
+async function loadSchedule(type){
+    await get(child(dbRef, 'Schedule/' + type)).then((snapshot) => {
+        if (snapshot.exists()) {
+            var tableArray = '<tr class="th_title"><th class="th_1">遊戲類型</th><th class="th_2">競賽隊伍</th><th class="th_3">競賽時間</th></tr>'
+            for (const [RegistrationGroup, RegValue] of Object.entries(snapshot.val())) {
+                var gameType = "";
+                if(type === "Aov"){
+                    gameType = "<td><img src='res/aov.png' class='table_img'></td>"
+                }else if(type === "Lol"){
+                    gameType = "<td><img src='res/lol.png' class='table_img'></td>"
+                }else{
+                    gameType = "<td><img src='res/mj.png' class='table_img'></td>"
+                }
+                tableArray += `<tr>${gameType}<td>${getTeamData(RegValue["team"])}</td><td>${gettimeFormat(RegValue["time"])}</td></tr>`
+              }
+              $(".schedule_table_body").html(tableArray);
+        }
+    });
+}
+
+function getTeamData(i){
+    var teamArray = i.split(",");
+    var final = `${teamArray[0]}`
+    for (let index = 1; index < teamArray.length; index++) {
+        final += ` VS. ${teamArray[index]}`
+    }
+    return final;
+}
+
+function gettimeFormat(p) {
+    var timeString = String(p);
+    var time = `${timeString.slice(0, 1)} / ${timeString.slice(1, 3)}<br><span style='font-size: 1.5rem; color: yellow;'">${timeString.slice(3, 5)}：${timeString.slice(5, 7)}</span>`;
+    return time;
+}

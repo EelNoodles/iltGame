@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<!-- saved from url=(0012)about:srcdoc -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><input type="hidden" id="nonce" value="118.210.185.8.198.245.25.165.124.76.118.137.84.251.204.202"><script nonce="">/*
+
+ Copyright The Closure Library Authors.
+ SPDX-License-Identifier: Apache-2.0
+*/
+var f=function(){for(var a=Number(this),b=[],c=a;c<arguments.length;c++)b[c-a]=arguments[c];return b},h=this||self,k=function(a){return a};var l;var m={},n=function(a){this.g=a};n.prototype.toString=function(){return this.g.toString()};var p=function(a){return a instanceof n&&a.constructor===n?a.g:"type_error:SafeScript"},q=function(a){if(void 0===l){var b=null;var c=h.trustedTypes;if(c&&c.createPolicy)try{b=c.createPolicy("goog#html",{createHTML:k,createScript:k,createScriptURL:k})}catch(d){h.console&&h.console.error(d.message)}l=b}a=(b=l)?b.createScript(a):a;return new n(a,m)};/*
+
+ SPDX-License-Identifier: Apache-2.0
+*/
+function r(a,b){a.textContent=p(b);var c,d;(c=(b=null==(d=(c=(a.ownerDocument&&a.ownerDocument.defaultView||window).document).querySelector)?void 0:d.call(c,"script[nonce]"))?b.nonce||b.getAttribute("nonce")||"":"")&&a.setAttribute("nonce",c)};var t=function(a){var b=f.apply(1,arguments),c,d;"evalCspCompatiblyData"in window||(window.evalCspCompatiblyData={index:0});var e=window.evalCspCompatiblyData.index++;window.evalCspCompatiblyData[e]={args:b,callback:function(g,u){c=g;d=u}};b=document.createElement("script");b.async=!1;b.setAttribute("data-index",e);e=q('"use strict";\v(function(){var idx=parseInt((document.currentScript||Array.prototype.slice.call(document.querySelectorAll("head script[data-index]"),-1)[0]).getAttribute("data-index"),10),curEvalData=evalCspCompatiblyData[idx];delete evalCspCompatiblyData[idx];(function(){var callback=curEvalData.callback;try{callback(true,('+
+String(p(a))+"\n));}catch(ex){callback(false, ex);}}).apply(this, curEvalData.args);})()");r(b,e);e=function(g){c=!1;d=g.error||g};window.addEventListener("error",e);document.head.appendChild(b);window.removeEventListener("error",e);document.head.removeChild(b);if(!c)throw d;return d};var v=document.getElementById("nonce"),w=v?v.value:(new URL(location.href)).searchParams.get("nonce");function x(){if(self.origin)return"null"==self.origin;if(""!=location.host)return!1;try{return window.parent.escape(""),!1}catch(a){return!0}}
+(function(){if(!x())throw"sandboxing error";var a=new MessageChannel;a.port1.onmessage=function(c){try{var d=t.apply(null,[q("(function("+c.data.paramNames.join(", ")+") {\n"+c.data.code+"\n}).apply(null, arguments)")].concat(c.data.values));c.ports[0].postMessage({result:d})}catch(e){c.ports[0].postMessage({error:e.toString()})}};var b="*";"chrome-extension:"==location.protocol&&(b=location.origin);window.parent.postMessage(w,b,[a.port2])})();
+</script></body></html>
