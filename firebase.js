@@ -308,8 +308,8 @@ function getTeamDatawithOver(type, i, over){
                 final += `<span style="opacity: 0.6;">${teamArray[1]}</span>`;
                 break;
             case "right":
-                var final = `<span style="opacity: 0.6;">${teamArray[1]}</span> VS. `;
-                final += `<span style="font-weight:bold; color: yellow;">${teamArray[0]}<span class="win">（WIN）</span></span>`;
+                var final = `<span style="opacity: 0.6;">${teamArray[0]}</span> VS. `;
+                final += `<span style="font-weight:bold; color: yellow;">${teamArray[1]}<span class="win">（WIN）</span></span>`;
                 break;
         }
     }
